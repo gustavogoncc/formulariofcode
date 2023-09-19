@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 id="title">Formulário de Pesquisa</h1>
+<p id="description">Por favor, preencha o formulário abaixo com suas informações.</p>
+
+<form id="survey-form" action="#" method="post">
+    <!-- Nome -->
+    <label id="name-label" for="name">Nome:</label>
+    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+
+    <!-- Número -->
+    <label id="number-label" for="number">Número (entre 1 e 10):</label>
+    <input type="number" id="number" name="number" min="1" max="10" placeholder="5">
+
+    <!-- Dropdown -->
+    <label for="dropdown">Escolha uma opção:</label>
+    <select id="dropdown" name="dropdown">
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+    </select>
+
+    <!-- Botões de rádio -->
+    <p>Escolha uma das opções:</p>
+    <input type="radio" id="opcao1" name="grupo" value="opcao1">
+    <label for="opcao1">Opção 1</label>
+
+    <input type="radio" id="opcao2" name="grupo" value="opcao2">
+    <label for="opcao2">Opção 2</label>
+
+    <!-- Caixas de seleção -->
+    <p>Selecione um ou mais itens:</p>
+    <input type="checkbox" id="item1" name="item1" value="item1">
+    <label for="item1">Item 1</label>
+
+    <input type="checkbox" id="item2" name="item2" value="item2">
+    <label for="item2">Item 2</label>
+
+    <!-- Área de texto -->
+    <label for="comentarios">Comentários:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seus comentários..."></textarea>
+
+    <!-- Botão de envio -->
+    <button id="submit" type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
